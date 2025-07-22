@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-Coders Squad</title>
+    <link rel="icon" href="logo.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       @media screen and (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        background: #111;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        padding: 1rem 2rem;
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">D-Coders Squad</a>
+
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="clubs.html">Clubs</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+            <img src="logo.jpeg" alt="D-Coders Squad Logo">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>D-Coders Squad</span></h1><br>
+            <p><b>D-Coders Squad</b> is an innovative and dynamic student community under the CSE Department at <strong>COER University</strong>, dedicated to nurturing talent in cutting-edge technologies like Competitive Coding Group, Machine Learning Group, Research & Development Group, Web Development Group, App Development Group, Graphics Designing Group. Founded under the guidance of <strong>Dr. Deepak Painuli (HOD, CSE)</strong>, the squad empowers students through hands-on learning, hackathons, expert-led workshops, and collaborative projects. With a focus on creativity, technical excellence, and peer-to-peer growth, D-Coders Squad serves as a launchpad for students to become future tech leaders.</p>
+            <br><br>
+            <a href="about.html" class="btn">Know More About Us!</a>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector("nav").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
+

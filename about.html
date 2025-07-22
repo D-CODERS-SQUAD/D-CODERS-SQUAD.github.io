@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | D-Coders Squad</title>
+    <link rel="icon" href="logo.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+     <style>
+       @media screen and (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        background: #111;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        padding: 1rem 2rem;
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">D-Coders Squad</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="clubs.html">Clubs</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="home" style="flex-direction: column; text-align: center;">
+        <div class="home-content">
+            <h1><span>About</span> D-Coders Squad</h1>
+            <p style="font-size: 1.8rem; max-width: 1000px; margin: auto; margin-top: 2rem; line-height: 1.8;">
+                <strong>D-Coders Squad</strong> is the official student-driven tech community of the <strong>Computer Science & Engineering Department</strong> at <strong>COER University</strong>. Formed to inspire, educate, and empower aspiring engineers, the community provides a vibrant space where curiosity meets creativity and knowledge transforms into real-world impact.
+                <br><br>
+                We believe in learning beyond the classroom. Our mission is to bridge the gap between academic theory and industry practice through collaborative activities, hands-on projects, peer mentoring, and competitive events. From organizing hackathons and coding challenges to hosting expert-led workshops and seminars, D-Coders Squad is at the forefront of student engagement in the ever-evolving world of technology.
+                <br><br>
+                The community thrives under the guidance of visionary faculty members like <strong>Dr. Deepak Painuli (HOD, CSE)</strong>, ensuring that every student gets the right platform to discover their strengths and pursue their passions in tech. D-Coders Squad not only promotes technical excellence but also nurtures leadership, communication, and innovation through active team collaboration.
+                <br><br>
+                Whether you are a first-year student looking for a starting point or a senior aiming to polish your expertise, D-Coders Squad welcomes everyone. We are more than just a club — we are a family of future developers, researchers, designers, innovators, and problem-solvers.
+                <br><br>
+                Explore our <a href="clubs.html" style="color: #00ADB5; text-decoration: underline;">Clubs</a> page to learn more about the specialized groups and how you can become a part of this thriving community.
+            </p>
+            <br>
+            <a href="contact.html" class="btn">Contact Us!</a>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector("nav").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
+
